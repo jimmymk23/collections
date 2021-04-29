@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>JavaScript 3</title>
+        <script>
+            function count_it() {
+                var max_num = document.getElementById("max_number").value;
+                var line = document.getElementById("per_line").value;
+                var numbers = "";
+                for (var i=1; i<=max_num; i++) {
+                    if((i % line) == 0) {
+                        numbers += String(i) + ",<br />";
+                    }
+                    else {
+                        if(i < 10) {
+                            numbers = numbers + " " + String(i) + " &nbsp &nbsp";
+                        }
+                        else if (i < 100) {
+                            numbers = numbers + " " + String(i) + " &nbsp";
+                        }
+                        else {
+                            numbers += String(i) + "&nbsp";
+                        }
+                    }
+                }
+                document.getElementById("counter").innerHTML = numbers;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>JavaScript 3</h1>
+        <p>Please enter a number (greater than 0) that you would like to count to:</p>
+        <input type="text" id="max_number" />
+        <p>What is the maximum abount of numbers you would like displayed on each line?</p>
+        <input type="text" id="per_line" />
+        <input type="button" value="Count!" onclick="count_it()" />
+
+        <br />
+        <span id="counter"></span>
+
+        <h2>JavaScript Questions</h2>
+        <ul>
+            <h3>What is the difference between n = 1 + 2 and n = "1" + "2"? If you were to display the contents on n, what would be shown on your page for each?</h3>
+                <li><i>For n = 1 + 2, n will equal the sum of 1 and 2 which is 3. This is because 1 and 2 are integers which can be added together as typical numbers.</i></li>
+                <li><i>For n = "1" + "2", n will equal 12 because the quotations indicate that whatever is between them should be treated as a character, not a value. So when combined, n will just be whatever it is you're adding, strung together next to each other.</i></li>
+            <h3>What does the += mean/do? What did we use it for in our JavaScript function?</h3>
+                <li><i>The += operation can be best explained through an example: i.e. x += y is the same thing as x = x + y.</i></li>
+                <li><i>In our JavaScript function, we used it in an "if" statement of a "for" loop to add the variable "numbers" to itself and other strings.</i></li>
+            <h3>What two peices of code/functions/attributes have we used in the last few labs to indicate/identify where our JavaScript chages are going to happen?</h3>
+                <li><i>(I'm a little confused by this question so I'm just going to fire away at some answers) We used id attributes to indicate which span, p, and img tags we wanted our JS to change. We also used the onclick attribute to indicate which JS function we wanted to initiate with our buttons.</i></li>
+        </ul>
+
+        <br />
+        <hr />
+        <a href="index.html">Back to my i101 Home Page</a>
+
+
+
+
+
+
+    </body>
+</html>

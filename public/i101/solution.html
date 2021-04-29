@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Solution</title>
+        <link href="solution.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css" rel="stylesheet"/>
+        <link href="images/FoodTruckIcon.png" rel="icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns bob">
+                    <ul>
+                        <li><a href="i101project.html"> <span class="bar"> I101 Project Homepage </span></a></li>
+                        <li><a href="research.html"> <span class= "bar"> Research </span> </a> </li>
+                        <li><a href="dataviz.html"> <span class="bar"> Data and Visualization </span> </a></li>
+                        <li><a href="solution.html"> <span class= "bar"> Solution </span> </a> </li>
+                        <li><a href="presentation.html"> <span class="bar"> Presentation </span> </a> </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <center><h1 class="title">Our Solution</h1></center>
+            <p class="description1">To tackle our problem of trying to get our customers more connected with our food truck, we are going to implement a few things into an app and/or website. Our solution is to help target those on a college campus within a 5 mile radius of a food truck. We feel that it is important that consumers are able to properly locate the food truck and order food through an app to skip wait times, if on a time crunch.</p>
+        <center><div class="separate"></div></center>
+        <div class="description1">
+            <h4>The Map</h4>
+            <p>The first of which is a map that will show the live GPS location of our truck. This can be done fairly easily by purchasing a GPS tracking device and installing it to an internet-connected device. This can keep a log of your frequent locations on the manufacturer’s servers and share that information with you, allowing you to create a feed of your current location on your website. This would be the most efficient and convenient way for your customers to stay up-to-date with your location in case you are running late or made a last-minute change to your schedule. Users would also be able to see the status of the truck, such as “traveling”, “set up”, and/or other customizable messages to let users know if the truck is currently moving or not, so they can wait until the truck arrives at its destination.</p>
+            <p>Below is an example of how something like this would look and work.</p>
+        </div>
+        <br />
+        <div class="map">
+            <p>Click here to update map locations </p>
+            <button class="button" type="button" onclick="changePicture()">Update</button>
+            <br />
+            <img id="mapImage" src="images/map1.jpg">
+        </div>
+        <center><div class="separate"></div></center>
+        <div class="description1">
+            <h4>The Schedule</h4>
+            <p>Of cource we would also offer a tradition schedule for those who would like to see where we plan to be tomorrow, the next week, and possibly the next month depending on how extensive the planning is. Though sometimes, events occur that are out of our control, such as weather, road construction, or even a breakdown that can delay or completely hinder our previously set schedule. One remedy to fix the rigid schedule problem is to embed a Google Calendar into the website. This will allow the owner to simply open the google calendar app on their phone, make a few location changes to their schedule, and hit done; the updating happens all behind the scenes, making changes live instantly on the website and app for the public.</p>
+            <p>Below is an example of how something like this would look and work.</p>
+        </div>
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?src=iu.edu_31jp68d405eertbmrd8dkbsmcg%40group.calendar.google.com&ctz=America%2FNew_York" height="600" scrolling="yes"></iframe>
+        </div>    
+        <center><div class="separate"></div></center>
+        
+        <div class="description1">
+            <h5>App Layout</h5> 
+            <p>Our app would designed intuitively, taking advantage of UI and UX design to make it asthetically pleasing and simple for everyone to use. We will have the live GPS locator as well as an online ordering function easily accessable on the front page to make it convenient for users who are in a hurry.</p>
+            <p>This is how it can potentially be designed.</p>
+        </div>
+            <center><img class="appdesign" src="images/app.jpg" width="550"></center>
+        
+        <center><div class="separate"></div></center>
+        
+        <div class="description1">
+            <h5>Menu</h5>
+            <p>In order to allow online ordering, we would need to keep a database of the items we offer so that users can see the menu, but also so that the online ordering system can process the requests.</p>
+            <p>Such a database could look like the one below.</p>
+        </div>
+        
+        <center>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th>item_id</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>category</th>    
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Fries</td>
+                    <td>$3.00</td>
+                    <td>snack</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Chips</td>
+                    <td>$1.50</td>
+                    <td>snack</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Basic Cheesy Grilled Cheese</td>
+                    <td>$5.00</td>
+                    <td>sandwich</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Caprese Grilled Cheese</td>
+                    <td>$6.50</td>
+                    <td>sandwich</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Jeff's 3 Cheese Grilled Cheese</td>
+                    <td>$7.00</td>
+                    <td>sandwich (fan favorite!)</td>
+                </tr>
+                <tr>
+                    <td>106</td>
+                    <td>Amy's Special Bacon Grilled Cheese</td>
+                    <td>$7.00</td>
+                    <td>sandwich (fan favorite!)</td>
+                </tr>
+                <tr>
+                    <td>107</td>
+                    <td>Coke</td>
+                    <td>$1.50</td>
+                    <td>drink</td>
+                </tr>
+                <tr>
+                    <td>108</td>
+                    <td>Sprite</td>
+                    <td>$1.50</td>
+                    <td>drink</td>
+                </tr>
+                <tr>
+                    <td>109</td>
+                    <td>Water</td>
+                    <td>$1.00</td>
+                    <td>drink</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Cake</td>
+                    <td>$2.00</td>
+                    <td>dessert</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>Brownie</td>
+                    <td>$1.25</td>
+                    <td>dessert</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td>Chocolate Chip Cookie</td>
+                    <td>$0.75</td>
+                    <td>dessert</td>
+                </tr>
+            </table>
+        </div></center>
+        
+        <center><div class="separate"></div></center>
+        
+        <div class="description1">
+            <h4>Accounts</h4>
+            <p>In order to offer a reward point system to our users, they will need to have individualized accounts. Within their account, they will be assigned a unique id, their name will be recorded, an email and password will be kept,  the amount of reward points earned, and their favorite item will all be kept on file.</p>
+            <p>In this database, we are utilizing both primary keys, to a differentiate each user, and foreign keys, which reference the primary key from the menu table.</p>
+            <p>An example of a database that would keep thrack of this information would look like something found below.</p>
+        </div>
+        <center><div class="accounts">
+            <table>
+                <tr>
+                    <th>User_id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Reward_Points</th>
+                    <th>Favorite_Item</th>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>George Washington</td>
+                    <td>gwashing@iu.edu</td>
+                    <td>independence1</td>
+                    <td>39</td>
+                    <td>104</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>John Adams</td>
+                    <td>jadams@iu.edu</td>
+                    <td>ilikecats2</td>
+                    <td>14</td>
+                    <td>111</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>Thomas Jefferson</td>
+                    <td>tommyjeff@iu.edu</td>
+                    <td>password1</td>
+                    <td>27</td>
+                    <td>106</td>
+                </tr>
+                <tr>
+                    <td>204</td>
+                    <td>James Madison</td>
+                    <td>jimmymad@iu.edu</td>
+                    <td>jimmymad</td>
+                    <td>41</td>
+                    <td>103</td>
+                </tr>
+                <tr id="newUser"></tr>
+            </table>
+            <button type="button" onclick="newUser()" id="newUserButton">Add New User!</button>
+        </div></center>
+
+    </body> 
+    <script>
+        function changePicture() {
+            var image = document.getElementById('mapImage');
+            if (image.src.match("map4")) {
+                image.src = "images/map1.jpg";
+            }
+            else if (image.src.match("map1")) {
+                image.src = "images/map2.jpg";
+            }
+            else if (image.src.match("map2")) {
+                image.src = "images/map3.jpg";
+            }
+            else {
+                image.src = "images/map4.jpg";
+            }
+        }
+        
+        function newUser() {
+            document.getElementById('newUser').innerHTML = "<td>205</td><td>James Monroe</td><td>jimmonroe@iu.edu</td><td>goUsa1</td><td>12</td><td>108</td>";
+            document.getElementById("newUserButton").parentNode.removeChild(newUserButton);
+        }
+    </script>
+</html>

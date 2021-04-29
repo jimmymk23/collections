@@ -1,0 +1,23 @@
+body {
+    font-family: tahoma;
+    background-color: lightgray;
+}
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: coral;
+}
+
+.mywebsite > a:link {
+    text-decoration: none
+}

@@ -1,0 +1,47 @@
+table {
+    border-width: thin;
+    border-color: black;
+    border-style: solid
+}
+
+td {
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+}
+
+.column2 {
+    background-color: red;
+}
+
+.italian {
+    color: white;
+    background-color: green;
+}
+
+.sleepin {
+    background-color: gray;
+    color: gold;
+}
+
+.tablehead {
+    background-color: black;
+    color: white;
+    font-size: 24;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: pink;
+}

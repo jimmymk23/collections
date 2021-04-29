@@ -1,0 +1,181 @@
+.container1 {
+    border: 4px solid blue;
+    margin: .25in;
+    padding: 10px;
+    position: relative;
+}
+
+.row1 {
+    border: 4px solid green;
+    margin: 5px;
+    padding: 5px;
+}
+
+.riddle {
+    border-style: solid;
+    border-width: 4px;
+    border-color: green;
+    padding: 5px;
+    background-image: url('images/desert.jpg');
+    text-align: center;
+}
+
+.dumbledor {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: purple;
+    padding: 5px;
+    background-image: url('images/smiley.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {
+    border: 4px solid green;
+    margin: 10px 5px 10px 5px;
+    padding: 5px;
+}
+
+.col1 {
+    border: 4px solid grey;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+}
+
+.col2 {
+    border: 4px solid lightblue;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+.iu {
+    color: red;
+}
+
+.pu {
+    color: orange;
+}
+
+.italics {
+    font-style: italics;
+}
+
+.row2 > .col1 {
+    background-color: blue;
+    color: yellow;
+}
+
+.row2 > .col2 {
+    background-color: red;
+    color: white;
+}
+
+.row3 > .col1 {
+    background-color: red;
+    color: white;
+}
+
+.row3 > .col2 {
+    background-color: blue;
+    color: yellow;
+}
+
+.row4 > .col1, .row5 > .col2 {
+    background-color: green;
+    color: white;
+}
+
+.row4 > .col2, .row5 > .col1 {
+    background-color: orange;
+    color: blue;
+}
+
+.row6 > .col1, .row7 > .col2 {
+    background-color: purple;
+    color: white;
+}
+
+.row6 > .col2, .row7 > .col1 {
+    background-color: gold;
+    color: black;
+}
+
+.row8 > .col1, .row9 > .col2 {
+    background-image: url('images/HerringCoveBeach.jpg');
+    color: black;
+}
+
+.row8 > .col2, .row9 > .col1 {
+    background-color: darkorange;
+    color: black;
+}
+
+.below {
+    font-family: 'Arial';
+    font-size: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 25px 0 1px 0;
+    margin: 0;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: blue;
+}
+
+.flag {
+    margin: 10px;
+    padding: 0;
+}
+
+.flag > .rowa {
+    padding: 0;
+    margin: 0;
+}
+
+.flag > .rowa > .cola, .flag > .rowb > .cola, .flag > .rowc > .cola, .flag > .rowd > .cola, .flag > .rowe > .cola, .flag > .rowf > .cola, .flag > .rowg > .cola, .flag > .rowh > .cola, .flag > .rowi > .cola, .flag > .rowj > .cola  {
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+.flag > .rowa > .colb, .flag > .rowb > .colb, .flag > .rowe > .colb, .flag > .rowf > .colb, .flag > .rowi > .colb, .flag > .rowj > .colb, .flag > .rowm > .colb, .flag > .rown > .colb, .flag > .rowq > .colb, .flag > .rowr > .colb, .flag > .rowu > .colb, .flag > .rowv > .colb, .flag > .rowy > .colb, .flag > .rowz > .colb, .flag > .rowaa > .colb, .flag > .rowa > .colb, .flag > .rowa > .colb, .flag > .rowa > .colb {
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+.flag > .rowm > .cola, .flag > .rown > .cola, .flag > .rowq > .cola, .flag > .rowr > .cola, .flag > .rowu > .cola, .flag > .rowv > .cola, .flag > .rowy > .cola, .flag > .rowz > .cola {
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+.flag > .rowc, .flag > .rowd, .flag > .rowg, .flag > .rowh, .flag > .rowk, .flag > .rowl, .flag > .rowo, .flag > .rowp, .flag > .rows, .flag > .rowt, .flag > .roww, .flag > .rowx {
+    color: white;
+}
+
+.underflag {
+    margin: 20px 0 10px 0;
+    background-color: lightgrey;
+    padding: 10px 70px 20px 70px;
+    font-family: 'Arial';
+    font-size: 20px;
+    text-align: center;
+}
+
+.underflag > p {
+    margin: 0 0 5px 0;
+}

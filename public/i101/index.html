@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>i101 Home Page</title>
+        <link rel="icon" href="images/home-icon.png">
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <script>
+        function changeImg1() {
+            var image1 = document.getElementById('img1');
+            if (image1.src.match("spongebob")) {
+                image1.src = "images/HerringCoveBeach.jpg";
+            }
+            else {
+                image1.src = "images/spongebob.jpg";
+            }
+        }
+        function changeImg2() {
+            var image2 = document.getElementById('img2');
+            if (image2.src.match("lift")) {
+                image2.src = "images/ChocolateShop.jpg";
+            }
+            else {
+                image2.src = "images/lift.jpg";
+            }
+        }
+    </script>
+
+    <body>
+        <h1><u>I101 Home Page</u></h1>
+        <img id="img1" onclick="changeImg1()" src="images/HerringCoveBeach.jpg" height = "200px" width = "300px">
+        <br />
+        <img id="img2" onclick="changeImg2()" src="images/ChocolateShop.jpg" height = "200px" width = "300px">
+        <hr />
+        <h2>Bio</h2>
+            <p>My name is James Keseling, but I go by Jimmy. I grew up in New Jersey and am currently studying at Indiana University for Interactive & Digital Media.</p>
+        <h2>About this page</h2>
+        <p>This page serves as the home page for my website. You can expect just a whole bunch of links to my other webpage assignments found in the "i101 Labs" section below. <i>Happy browsing!</i>.</p>
+        <h2>My College Bucket List</h2>
+            <p>Some of the items on my college bucket list include trying as many restaurants in Bloomington as I can, finding a minor, and possibly going to grad school, just to name a few.</p>
+        <hr />
+        <h3>i101 Labs</h3>
+            <ul>
+                <li><a href="html1.html">HTML 1</a></li>
+                <li><a href="html2.html">HTML 2</a></li>
+                <li><a href="css1.html">CSS 1</a></li>
+                <li><a href="css2.html">CSS 2</a></li>
+                <li><a href="py1.html">Python 1</a></li>
+                <li><a href="py2.html">Python 2</a></li>
+                <li><a href="py3.html">Python 3</a></li>
+                <li><a href="py4.html">Python 4</a></li>
+                <li><a href="js1.html">JavaScript 1</a></li>
+                <li><a href="js2.html">JavaScript 2</a></li>
+                <li><a href="midterm/">Midterm Website</a></li>
+                <li><a href="js3.html">JavaScript 3</a></li>
+                <li><a href="js4.html">JavaScript 4</a></li>
+                <li><a href="db1.html">Database 1</a></li>
+                <li><a href="db2.html">Database 2</a></li>
+                <li><a href="db3.html">Database 3</a></li>
+                <li><a href="i101project.html">Group Final Website</a></li>
+            </ul>
+        <hr />
+        <h3>IU Resources</h3>
+            <p>If you're needing some help in this course, I've compiled a list of some good websites that I think <b>could</b> be helpful.</p>
+            <ol>
+                <li><a href="http://www.indiana.edu/~i101/">i101 Course Website</a></li>
+                <li><a href="https://www.sice.indiana.edu/undergraduate/help-center.html">SICE Help Center</a></li>
+                <li><a href="http://www.indiana.edu/~i101/office-hours.html">Office Hours & Study Sessions</a></li>
+            </ol>
+        <hr />
+        <h3 class="mywebsite"><a href="http://pages.iu.edu/~jkeselin/i101/playground/home.html">My Website</a></h3>
+    </body>
+</html>

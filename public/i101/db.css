@@ -1,0 +1,52 @@
+body {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+li {
+    margin-left: 60px;
+}
+
+.return {
+    margin: 20px 0 0 20px;
+}
+
+a {
+    margin-left: 60px;
+}    
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:active {
+    color: coral;
+}
+
+input {
+    margin-left: 38px;
+}
+
+button {
+    margin-left: 20px;
+}
+
+img {
+    margin-left: 40px;
+}

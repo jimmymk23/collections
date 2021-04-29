@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-image: url("images/bright-squares.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 3%;
+    float: right;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 100%;
+    width: 30%;
+    max-width: 400px;
+    position: fixed;
+    background-image: url("images/dust_scratches.png");
+    /* background-image: url("images/blue-fabric-bg.png"); */
+    background-size: cover;
+    padding: 30px 30px 30px 0px;
+    margin-right: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin: 0;
+    padding: 15px;
+}
+
+nav li {
+    margin: .6em 0em;
+    padding: 6px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+
+nav a {
+    padding: 6;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+main {
+}
+
+.section {
+    margin: 30px 5px;
+    padding: 1px 20px 5px 20px;
+    background-image: url("images/dust_scratches.png");
+
+}

@@ -1,0 +1,155 @@
+/* Color Variables */
+:root {
+    --main-gray: #D1CCC0;
+    --main-red: #941B0C;
+    --acc-blue: #a0afc2;
+    --acc-red: #722117;
+    --font: #291F1E
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/kitchen-bg.png");
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--font);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 900px;
+}
+
+main {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: var(--main-gray);
+}
+
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 5em;
+    margin: 3%;
+    color: var(--main-red);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', serif;
+}
+
+h2 {
+    padding-bottom: .5em;
+    padding-left: 1%;
+    border-bottom: 2px solid var(--main-red);
+}
+
+h3 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    /* padding-left: 4%; */
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--main-red);
+    font-size: 1.25em;
+    border-bottom: 2px solid var(--main-gray);
+    transition: border 0.4s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--main-red);
+}
+
+section {
+    margin: .5em auto;
+    padding: .5em;
+    border-top: 3px dotted var(--acc-red);
+    width: 90%;
+}
+
+section h4 {
+    margin: 10px 0px;
+    font-size: 2em;
+    color: var(--main-red);
+}
+
+.description {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.resize {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.review {
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+    border: 2px solid var(--acc-red);
+    box-shadow: 2px 2px 2px var(--acc-red);
+    border-radius: .5em;
+}
+
+.cite {
+    margin: .4em auto;
+    font-style: normal;
+}
+
+button {
+    display: block;
+    background: var(--main-red);
+    padding: 15px 40px;
+    color: var(--acc-blue);
+    border: 1px solid var(--main-red);
+    border-radius: .3em;
+    font-size: .9em;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px var(--acc-red);
+    transition: background .4s, box-shadow .3s, border .4s;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px var(--acc-red);
+}
+
+button:active {
+    box-shadow: 0px 0px 0px var(--acc-red);
+}
+
+footer {
+    margin: 2em 0 0 0;
+    padding: 15px;
+    background-color: var(--main-gray);
+    text-align: center;
+}

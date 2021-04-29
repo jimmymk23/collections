@@ -1,0 +1,183 @@
+@import '_helpers'
+
+@mixin bg-color-scheme($light, $dark)
+    @media (prefers-color-scheme: light)
+        background-color: $light
+    @media (prefers-color-scheme: dark)
+        background-color: $dark
+
+@mixin color-scheme($light, $dark)
+    @media (prefers-color-scheme: light)
+        color: $light
+        transition: color .1s ease
+    @media (prefers-color-scheme: dark)
+        color: $dark
+        transition: color .2s ease
+
+@mixin link-border($width, $radius, $light, $dark)
+    @media (prefers-color-scheme: light)
+        border: $width solid $light
+        border-radius: $radius
+        transition: border .1s ease
+    @media (prefers-color-scheme: dark)
+        border: $width solid $dark
+        border-radius: $radius
+        transition: border .1s ease
+
+$light-main-background-color: #e4e4e4
+$light-nav-background-color: #b1bdcf
+$light-section-color: #d9d9d9
+$light-text-color: #2b2b2b
+$light-link-color: #165aec
+$light-link-color-hover: #2a4685
+
+$dark-main-background-color: #1d1d1d
+$dark-nav-background-color: #2c2c2c
+$dark-section-color: #2c2c2c
+$dark-text-color: #b3b3b3
+$dark-link-color: #8eb1fd
+$dark-link-color-hover: #5653ff
+
+*, *::before, *::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+div#__next
+    display: grid
+    position: fixed
+    top: 0
+    bottom: 0
+    grid-template-columns: 1fr 3fr
+    grid-template-rows: 1fr
+    height: 100vh
+    font-family: 'Montserrat', sans-serif
+    @media (max-width: $mobile-breakpoint)
+        grid-template-columns: 1fr
+        grid-template-rows: $nav-height 1fr
+nav
+    @include bg-color-scheme($light-nav-background-color, $dark-nav-background-color)
+    @include color-scheme($light-text-color, $dark-text-color)
+    grid-column: 1 / 2
+    padding: 2rem
+    .links
+        margin: 0 auto
+        list-style: none
+        h1
+            font-weight: 800
+            margin-bottom: 1rem
+        li
+            a
+                display: block
+                text-decoration: none
+                padding: .6rem 0
+                font-size: 1.15rem
+                @include color-scheme($light-text-color, $dark-text-color)
+                &:hover
+                    @include color-scheme($light-link-color, $dark-link-color)
+        @media (max-width: $tablet-breakpoint)
+            li
+                a
+                    font-size: 1rem
+                    padding: .5rem 0
+        @media (max-width: $mobile-breakpoint)
+            @include bg-color-scheme($light-nav-background-color, $dark-nav-background-color)
+            li
+                a
+                    font-size: .9rem
+                    padding: .5rem 0
+    .burger
+        display: none
+        cursor: pointer
+    @media (max-width: $mobile-breakpoint)
+        grid-column: 1 / 2
+        grid-row: 1 / 2
+        z-index: 2
+        padding: 1px
+        .links
+            position: absolute
+            transform: translateX(-100%)
+            top: $nav-height
+            height: 100vh - $nav-height
+            width: 60vw
+            max-width: 300px
+            min-width: 140px
+            padding: 1rem
+            z-index: 1
+            transition: transform .2s ease
+        .burger
+            display: inline-block
+            font-size: 1.5rem
+            line-height: $nav-height
+            padding: 0 .5rem
+            margin-left: 1rem
+        .nav-active
+            transform: translateX(0%)
+main
+    grid-column: 2 / 5
+    overflow: scroll
+    padding: 2em 0 3em
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 2em
+    @include bg-color-scheme($light-main-background-color, $dark-main-background-color)
+    @include color-scheme($light-text-color, $dark-text-color)
+    section
+        width: 80%
+        padding: 2rem
+        border-radius: 1rem
+        @include bg-color-scheme($light-section-color, $dark-section-color)
+        h1
+            margin: .5rem 0
+            a
+                @include color-scheme($light-text-color, $dark-text-color)
+                &:hover
+                    @include color-scheme($light-link-color-hover, $dark-link-color-hover)
+        p, li
+            margin: .5rem 0
+            font-size: 1.1rem
+        ul
+            list-style: none
+            margin-top: 1rem
+            a
+                text-decoration: none
+                @include color-scheme($light-link-color, $dark-link-color)
+                &:hover
+                    @include color-scheme($light-link-color-hover, $dark-link-color-hover)
+    .button
+        display: inline-block
+        margin: 0.75rem 0.5rem 0 0
+        padding: .75rem 1rem
+        text-decoration: none
+        @include color-scheme($light-link-color, $dark-link-color)
+        @include link-border(2px, .7rem, $light-link-color, $dark-link-color)
+        &:hover
+            @include color-scheme($light-link-color-hover, $dark-link-color-hover)
+            @include link-border(2px, .7rem, $light-link-color-hover, $dark-link-color-hover)
+    footer
+        @extend section
+        text-align: center
+        margin-bottom: 4em
+        p
+            font-size: .8rem
+            a
+                @include color-scheme($light-link-color, $dark-link-color)
+                text-decoration: none
+                &:hover
+                    @include color-scheme($light-link-color-hover, $dark-link-color-hover)
+    @media (max-width: $mobile-breakpoint)
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+        padding-bottom: 5rem
+        section
+            width: 90%
+        .overlay
+            display: block
+            position: fixed
+            top: $nav-height
+            left: 0
+            height: 100vh - $nav-height
+            width: 100vw
+            background-color: #00000000
+    

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Shot Shop</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web|Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero-img">
+            <div class="hero-text">
+                <p>The Shot Shop</p>
+            </div>
+        </div>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- <h1>My Shop</h1> -->
+                <h2>First Grid</h2>
+                <div class="grid three">
+                    <div class="item">
+                        <img src="img/img_1.jpg" alt="">
+                        <p>Hawaiian Sunset</p>
+                        <button class="buy" type="button">
+                            <p class="price">$10</p>
+                            <i class="material-icons">launch</i>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_2.jpg" alt="">
+                        <p>Rusty Ride</p>
+                        <button class="buy" type="button">
+                            <p class="price">$10</p>
+                            <i class="material-icons">launch</i>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_3.jpg" alt="">
+                        <p>A Road to the Reef</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_4.jpg" alt="">
+                        <p>New England Sunset</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_5.jpg" alt="">
+                        <p>Yellow</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_6.jpg" alt="">
+                        <p>Beams</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_7.jpg" alt="">
+                        <p>Blood Moon over the Dunes</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_8.jpg" alt="">
+                        <p>Blood Moon over the Dunes</p>
+                    </div>
+                </div>
+                <h2>Second Grid</h2>
+                <div class="grid three">
+                    <div class="item">
+                        <img src="img/img_25.jpg" alt="">
+                        <p>On the rocks</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_18.jpg" alt="">
+                        <p>Palm tree twilight</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_13.jpg" alt="">
+                        <p>Beach fire blaze</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_12.jpg" alt="">
+                        <p>Cape cottage</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_16.jpg" alt="">
+                        <p>~</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/img_27.jpg" alt="">
+                        <p>~</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+        $(".hero-img").backstretch([
+                "img-lg/img_40.jpg",
+                "img-lg/img_27.jpg",
+                "img-lg/img_16.jpg",
+                "img-lg/img_12.jpg"
+            ],
+            {duration: 3000, fade: 500});
+    </script>
+</html>

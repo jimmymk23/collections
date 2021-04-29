@@ -1,0 +1,111 @@
+.bob {
+    padding-left: 45px;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+a {
+    background-color: #FFD700;
+}
+
+.bar {
+    color: white;
+}
+
+a:hover {
+    background-color: lightgrey;
+  	color: black;
+}
+
+body {
+    background-color: #87CEFA;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 16px;
+}
+
+.title {
+    text-align: center;
+    color: darkblue;
+    margin-top: 20px;
+    padding: 0 0 15px 0;
+}
+
+.description1 {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.map {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: solid 1px darkblue;
+    padding: 20px;
+}
+
+.map img {
+    width: 100%;
+}
+
+.separate {
+    border-bottom: 2px solid gray;
+    width: 70%;
+    margin: 40px;
+}
+
+.button {
+    background-color: #FFD700;
+}
+
+.calendar {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    border: solid 1px darkblue;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.accounts {
+    margin: auto;
+    border: solid 1px darkblue;
+    padding: 20px;
+    width: 70%;
+}
+
+.appdesign {
+    margin: auto;
+    border: solid 1px darkblue;
+    padding: 20px;
+}
+
+.menu {
+    border: solid 1px darkblue;
+    padding: 20px;
+    width: 60%;
+}

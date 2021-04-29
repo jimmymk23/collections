@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shot Shop</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web|Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div class="hero-img">
+            <div class="hero-text">
+                <p>The Shot Shop</p>
+            </div>
+        </div>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a class="current" href="#">Home</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h2>First Grid</h2>
+                <div class="grid" id="g1">
+                    <div class="item" id="a">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Sunset Waltz</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="b">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Cloudy Climb</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="c">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Buon Pommeriggio</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="d">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">The MET</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="e">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Empire.</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="f">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Spring</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Cape Cod</h2>
+                <div class="grid" id="g2">
+                    <div class="item" id="g">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Rocky Road</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="h">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Winter Walkway</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="i">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Rainbow</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="k">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Photo Photo</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="l">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Breakwater</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Squirrels</h2>
+                <div class="grid" id="g3">
+                    <div class="item" id="m">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Hazel</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="n">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Ginger</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="o">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">George</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                    <div class="item" id="p">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <p class="name">Damiem</p>
+                            <p>---</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+        $(".hero-img").backstretch([
+                "img-lg/img_40.jpg",
+                "img-lg/img_27.jpg",
+                "img-lg/img_16.jpg",
+                "img-lg/img_12.jpg"
+            ],
+            {duration: 3000, fade: 800});
+
+            // stretch images
+        $("#a").backstretch("img/img_15.jpg");
+        $("#b").backstretch("img/img_23.jpg");
+        $("#c").backstretch("img/img_5.jpg");
+        $("#d").backstretch("img/img_26.jpg");
+        $("#e").backstretch("img/img_32.jpg");
+        $("#f").backstretch("img/img_34.jpg");
+            // Cape Cod
+        $("#g").backstretch("img-lg/img_25.jpg");
+        $("#h").backstretch("img/img_30.jpg");
+        $("#i").backstretch("img/img_6.jpg");
+        $("#k").backstretch("img/img_28.jpg");
+        $("#l").backstretch("img/img_19.jpg");
+            // Squirrels
+        $("#m").backstretch("img/img-41.jpg");
+        $("#n").backstretch("img/img-42.jpg");
+        $("#o").backstretch("img/img-43.jpg");
+        $("#p").backstretch("img/img-44.jpg");
+
+    </script>
+</html>

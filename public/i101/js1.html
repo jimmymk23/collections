@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Javascript 1</title>
+
+    </head>
+
+    <body>
+
+        <h1>Javascript 1</h1>
+            <p id="script1">This is my first Javascript.</p>
+            <button type="button" onclick="newFunction()">Click Here!</button>
+
+        <h1>Javascript + CSS</h1>
+            <p id="styleChange1">Javascript can change the style of text too!</p>
+            <button type="button" onclick="styleChange1()">Click Me!</button>
+
+        <h2>Trying it one more time...</h2>
+            <p id="styleChange2">Something... blah blah blah</p>
+            <button type="button" onclick="styleChange2()">Click right here!</button>
+
+        <h2>JavaScript Homework</h2>
+            <p id="change1">Here's my first "paragraph".</p>
+            <button type="button" onclick="change1()">Click here</button>
+
+            <p id="change2">Here's my second "paragraph".</p>
+            <button type="button" onclick="change2()">Click here</button>
+
+
+
+
+
+        <script>
+            function newFunction() {
+                document.getElementById("script1").innerHTML = "It Worked!";
+            }
+            function styleChange1() {
+                var a = document.getElementById("styleChange1");
+                a.style.fontSize = "25px";
+                a.style.color = "red";
+            }
+            function styleChange2() {
+                var b = document.getElementById("styleChange2");
+                b.style.color = "green";
+                b.style.backgroundColor = "yellow";
+            }
+            function change1() {
+                document.getElementById("change1").innerHTML = "Even though it's more of a sentence.";
+            }
+            function change2() {
+                var c = document.getElementById("change2");
+                c.style.font = "20px Arial";
+                c.style.color = "blue";
+                c.style.borderBottom = "2px solid orange";
+            }
+        </script>
+
+        <hr />
+        <a href="index.html">Back to my i101 Home Page</a>
+
+    </body>
+</html>

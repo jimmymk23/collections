@@ -1,0 +1,82 @@
+.bob {
+    padding-left: 45px;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+a {
+    background-color: #FFD700;
+}
+
+.bar {
+    color: white;
+}
+
+a:hover {
+    background-color: lightgrey;
+}
+
+body {
+    background-color: #87CEFA;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 16px;
+}
+
+.pages {
+    text-align: center;
+    width: 100%;
+}
+
+.pages > h1 {
+    margin: 0 0 15px 0;
+}
+
+.pages > p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gal {
+    width: 100%;
+    margin: 0;
+}
+
+.gallery {
+    margin: 50px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 200px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}

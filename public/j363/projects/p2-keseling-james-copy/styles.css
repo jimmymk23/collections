@@ -1,0 +1,166 @@
+/* Color Variables */
+:root {
+    --blue: #499be1;
+    --t-blue: #499be1cc;
+    --t-white: #ffffffed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.hero-img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 55vh;
+    /* background-image: url("img-lg/img_40.jpg"); */
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+
+.hero-text {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 5em;
+    color: var(--blue);
+    text-shadow: #474747 1px 1px 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    background: var(--t-white);
+    z-index: 1;
+}
+
+nav ul {
+    padding: 1px 0px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1em 2em;
+    color: black;
+    border-bottom: 2px solid #0000;
+    transition: color .3s, border-bottom .3s;
+}
+
+nav a:hover {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+
+main {
+    padding: 0px 1px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--blue);
+    font-size: 3em;
+    margin: .2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1em;
+    margin-bottom: 3em;
+}
+
+.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px var(--blue);
+    transition: bottom .3s, box-shadow .2s;
+}
+
+.item:hover {
+    bottom: 2px;
+    box-shadow: 0px 2px 5px var(--blue);
+}
+
+.three img {
+    width: 100%;
+    height: 14em;
+    object-fit: cover;
+}
+
+.four img {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+
+.item p {
+    margin: 0;
+    padding: .5em .25em;
+}
+
+.buy {
+    display: block;
+    margin: 0 auto 1em auto;
+    padding: .1em;
+    width: 70%;
+    background: var(--t-blue);
+    color: white;
+    border: linear-gradient(to right, var(--blue), blue) solid 3px;
+    height: 3em;
+    border-radius: 5em;
+    opacity: 0;
+    transition: opacity .2s, width .2s;
+}
+
+.item:hover .buy {
+    opacity: 1;
+}
+
+.item:hover .buy:hover {
+    width: 90%;
+}
+
+.price, .material-icons {
+    display: inline;
+}
+
+.price {
+    font-size: 1.5em;
+}
+
+.material-icons {
+}
